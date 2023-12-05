@@ -51,3 +51,14 @@ for profile in classProfile:
   print("Year: " + str(profile["Year"]))
   print("Section: " + profile["Section"])
   print("=============")
+
+print("Thank you for using Class Profile!")
+
+classProfile = [{'Name': 'Jaiza', 'Age': 21, 'Location': 'Sibalom', 'Course': 'BSIT', 'Year': 1, 'Section': 'B'}, {'Name': 'Gee', 'Age': 20, 'Location': 'Sebaste', 'Course': 'BSIT', 'Year': 1, 'Section': 'B'}, {'Name': 'John Ray', 'Age': 19, 'Location': 'San Jose', 'Course': 'BSCS', 'Year': 1, 'Section': 'B'}]
+
+classProfile = str(classProfile)
+
+with open("./class-profile.txt","w") as file:
+  file.write(classProfile)
+
+print("Class Profile saved to class-profile.txt")
